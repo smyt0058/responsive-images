@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    color: #555;
+    box-sizing: border-box;
+    background-color: darkgrey;
+}
+
+header {
+    min-height: 60px;
+    background-color: cadetblue;
+}
+
+h1 {
+    font-family: 'Shrikhand', "Helvetica", "Arial", sans-serif;
+    font-size: 3rem;
+    padding-top: 0.4rem;
+    text-align: center;
+    color: burlywood;
+;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.gallery {
+    border: 2px solid black;
+    padding: 2rem 1rem 2rem 2rem;
+    list-style: none;
+    background-color: aquamarine;
+}
+
+.gallery li {
+    display: inline-block;
+    float: left;
+}
+
+img {
+    max-width: 90%;
+    border: 5px solid burlywood;
+    box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.46);
+    margin-bottom: 1rem;
+}
+
+picture {
+    max-width: 90%;
+}
+
+
+@media screen and (max-width: 600px){
+    ul {
+        columns: 1;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    ul {
+        columns: 2;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .wrapper{
+        margin-left: 4rem;
+        margin-right: 3rem;
+    }
+    ul {
+        columns: 3;
+    }
+}
